@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Hero -->
+    <link rel="stylesheet" href="./style/hero.css">
+
+    <!--About Me-->
+    <link rel="stylesheet" href="./style/aboutMe.css">
+
+    <!-- Skills -->
+    <link rel="stylesheet" href="style/skill.css">
+
+
+    <!-- projects -->
+    <link rel="stylesheet" href="style/projects.css">
+
+    <!-- Contact Me -->
+    <link rel="stylesheet" href="style/contactMe.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="style/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <header class="navbar">
+        <div class="logo">Portfolio<span>.</span></div>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#aboutMe">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contactMe">Contact Me</a>
+        </nav>
+        <button class="btn-hire">Hire me</button>
+    </header>
+
+    <section class="hero-container" id="home">
+
+        <div class="hero-content">
+            <span class="subtitle">Full Stack Developer</span>
+            <h1>Hello I'm <br><span id="typing-text" class="accent-text"></span><span class="cursor">|</span></h1>
+
+            <p class="description">
+                I excel at crafting elegant digital experiences and I am proficient in various programming languages and
+                technologies.
+            </p>
+
+            <div class="action-area">
+                <button class="btn-cv"> <a href="#" download="Muhammad Hanif's Frontend CV.docx">DOWNLOAD CV </a><i
+                        class="fa-solid fa-download"></i></button>
+
+                <div class="social-icons">
+                    <a href="https://github.com/muhanif-dev" class="wave-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-hanif-92a127358" class="wave-icon"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="wave-icon"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="wave-icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <div class="main-circle">
+                <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+
+                <a href="#id-section" class="skill-icon icon-id"><i
+                        class="skill-icon-react fa-brands fa-react profile-img-icon"></i></a>
+                <a href="#ps-section" class="skill-icon icon-ps"><i
+                        class="skill-icon-node fa-brands fa-node-js profile-img-icon"></i></a>
+                <a href="#xd-section" class="skill-icon icon-xd"><i
+                        class="skill-icon-mysql fa-solid fa-database profile-img-icon"></i></a>
+                <a href="#ai-section" class="skill-icon icon-ai"><i
+                        class="skill-icon-js fa-brands fa-js profile-img-icon"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="stats-container">
+        <div class="stat-box">
+            <h2>2</h2>
+            <p>Years of<br>experience</p>
+        </div>
+        <div class="stat-box">
+            <h2>30+</h2>
+            <p>Projects<br>completed</p>
+        </div>
+        <div class="stat-box">
+            <h2>10+</h2>
+            <p>Technologies<br>mastered</p>
+        </div>
+        <div class="stat-box">
+            <h2>500</h2>
+            <p>Code<br>commits</p>
+        </div>
+    </section>
+
+    <!--About Me-->
+    <section class="about-section" id="aboutMe">
+        <!-- Left -->
+        <div class="left-content">
+            <h4 class="about-title">About Me</h4>
+            <h2 class="main-heading">Why You Should Hire Me?</h2>
+            <p class="description">
+                I am a passionate software developer with over 7 years of experience in crafting digital products.
+                I love solving complex problems through clean code and user-centric design principles.
+            </p>
+
+            <div class="skill-group">
+                <div class="skill-label"><span>Web Design</span><span>60%</span></div>
+                <div class="progress-bg">
+                    <div class="progress-fill"
+                        style="--val: 60%; background: linear-gradient(90deg, #00ff99, #00ccff);"></div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label"><span>UI/UX Design</span><span>90%</span></div>
+                <div class="progress-bg">
+                    <div class="progress-fill"
+                        style="--val: 90%; background: linear-gradient(90deg, #ff9900, #ffcc00);"></div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label"><span>Development</span><span>50%</span></div>
+                <div class="progress-bg">
+                    <div class="progress-fill"
+                        style="--val: 50%; background: linear-gradient(90deg, #ff00ff, #cc00ff);"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center -->
+        <div class="center-image">
+            <div class="image-circle">
+                <img src="images/profile.jpg" alt="Profile" class="profile-img">
+            </div>
+        </div>
+
+        <!-- Right: Improved Stats -->
+        <div class="right-content">
+            <div class="stat-card">
+                <div class="stat-number">220+</div>
+                <div class="stat-text">Happy Clients</div>
+                <p class="stat-desc">Trusted by businesses globally to deliver high-quality, scalable web solutions that
+                    drive growth.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">340+</div>
+                <div class="stat-text">Projects Completed</div>
+                <p class="stat-desc">Successfully delivered diverse projects ranging from custom web applications to
+                    enterprise-level digital platforms.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section class="skills-container" id="skills">
+        <h2 class="skills-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card" style="--p: 95%;">
+                <div class="skill-header"><i class="fa-brands fa-html5 skill-icon-html"></i>
+                    <div class="skill-name">HTML5</div>
+                </div>
+                <div class="label-row"><span>Proficiency</span><span class="perc-text">95%</span></div>
+                <div class="bar-bg">
+                    <div class="fill-bar"></div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-bar-bg">
+                    <div class="sub-fill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" style="--p: 90%;">
+                <div class="skill-header"><i class="fa-brands fa-css3-alt skill-icon-css"></i>
+                    <div class="skill-name">CSS</div>
+                </div>
+                <div class="label-row"><span>Proficiency</span><span class="perc-text">90%</span></div>
+                <div class="bar-bg">
+                    <div class="fill-bar"></div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-bar-bg">
+                    <div class="sub-fill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" style="--p: 85%;">
+                <div class="skill-header"><i class="fa-brands fa-js skill-icon-js"></i>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="label-row"><span>Proficiency</span><span class="perc-text">85%</span></div>
+                <div class="bar-bg">
+                    <div class="fill-bar"></div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-bar-bg">
+                    <div class="sub-fill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" style="--p: 80%;">
+                <div class="skill-header"><i class="fa-brands fa-react skill-icon-react"></i>
+                    <div class="skill-name">React.js</div>
+                </div>
+                <div class="label-row"><span>Proficiency</span><span class="perc-text">80%</span></div>
+                <div class="bar-bg">
+                    <div class="fill-bar"></div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-bar-bg">
+                    <div class="sub-fill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" style="--p: 75%;">
+                <div class="skill-header"><i class="fa-brands fa-node-js skill-icon-node"></i>
+                    <div class="skill-name">Node.js</div>
+                </div>
+                <div class="label-row"><span>Proficiency</span><span class="perc-text">75%</span></div>
+                <div class="bar-bg">
+                    <div class="fill-bar"></div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-bar-bg">
+                    <div class="sub-fill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" style="--p: 70%;">
+                <div class="skill-header"><i class="fa-solid fa-database skill-icon-mysql"></i>
+                    <div class="skill-name">mySql</div>
+                </div>
+                <div class="label-row"><span>Proficiency</span><span class="perc-text">70%</span></div>
+                <div class="bar-bg">
+                    <div class="fill-bar"></div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-bar-bg">
+                    <div class="sub-fill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" style="--p: 80%;">
+                <div class="skill-header"><i class="fa-solid fa-server skill-icon-express"></i>
+                    <div class="skill-name">Express</div>
+                </div>
+                <div class="label-row"><span>Proficiency</span><span class="perc-text">80%</span></div>
+                <div class="bar-bg">
+                    <div class="fill-bar"></div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-bar-bg">
+                    <div class="sub-fill-bar"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" style="--p: 85%;">
+                <div class="skill-header"><i class="fa-brands fa-bootstrap skill-icon-bootstrap"></i>
+                    <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="label-row"><span>Proficiency</span><span class="perc-text">85%</span></div>
+                <div class="bar-bg">
+                    <div class="fill-bar"></div>
+                </div>
+                <div class="divider"></div>
+                <div class="sub-bar-bg">
+                    <div class="sub-fill-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <h2 class="skills-title">My <span>Projects</span></h2>
+    <section class="grid" id="projects">
+        <script>
+            const projects = [
+                { img: "./images/Ring Size Calculatore2.PNG", title: "Ring Size Calculator", desc: "Robust store with payment gateway.", tech: ['fab fa-html5', 'fab fa-css3', 'fab fa-js'], code: "https://github.com/muhanif-dev", demo: "https://java-script-projects-8ouv.vercel.app/" },
+
+                { img: "./images/aaa.PNG", title: "Temperature Converter", desc: "Track workouts and diet plans.", tech: ['fab fa-html5', 'fab fa-css3', 'fab fa-js'], code: "https://github.com/muhanif-dev", demo: "https://java-script-projects-hoau.vercel.app/" },
+
+                { img: "./images/QR & Bar code genrator.jpeg", title: "QR & Bar-Code Generator", desc: "SEO-friendly content using AI.", tech: ['fab fa-html5', 'fab fa-css3', 'fab fa-js'], code: "https://github.com/muhanif-dev", demo: "https://java-script-projects-itv9.vercel.app/" },
+
+                { img: "./images/Screenshot_8-12-2025_104532_127.0.0.1.jpeg", title: "Free Classroom Finder", desc: "Real-time market tracking.", tech: ['fab fa-html5', 'fab fa-css3', 'fab fa-js'], code: "https://github.com/muhanif-dev", demo: "https://room-availability-cheker.github.io/Room-Availability-cheker/" },
+
+                { img: "./images/EduVault.png", title: "Notes Sharing Plateform", desc: "Collaborative tool for teams.", tech: ['fab fa-react', 'fab fa-node-js'], code: "https://github.com/muhanif-dev", demo: "#" },
+
+                { img: "./images/Tripzo SS.PNG", title: "Tripzo Visting Website", desc: "Virtual tour enabled portal.", tech: ['fab fa-wordpress', 'fas fa-home'], code: "https://github.com/muhanif-dev", demo: "#" }
+            ];
+
+            projects.forEach(p => {
+                document.write(`
+            <div class="card">
+                <div class="img-box">
+                    <img src="${p.img}" alt="${p.title}">
+                    <div class="overlay">
+                        <a href="${p.demo}" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" title="Copy Link"><i class="fas fa-copy"></i></a>
+                    </div>
+                </div>
+                <h3>${p.title}</h3>
+                <p style="font-size: 14px; color: #aaa;">${p.desc}</p>
+                <div class="tech-tags">
+                    ${p.tech.map(t => `<i class="${t}"></i>`).join('')}
+                </div>
+                <div class="btns">
+                    <a href="${p.code}" class="btn btn-code"><i class="fab fa-github"></i> Code</a>
+                    <a href="${p.demo}" class="btn btn-demo"><i class="fas fa-play"></i> Demo</a>
+                </div>
+            </div>`);
+            });
+        </script>
+    </section>
+
+
+    <!-- Contact Me -->
+
+    <section class="contact-section" id="contactMe">
+        <h2 class="skills-title">Contact <span>Me</span></h2>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <div class="glass-card">
+            <h2 class="section-title">Let's <span>Collaborate</span></h2>
+            <form>
+                <div class="form-grid">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+
+            <!-- Social Icons Added -->
+            <div class="social-links">
+                <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
+                <div class="icon-box"><i class="fab fa-github"></i></div>
+                <div class="icon-box"><i class="fab fa-instagram"></i></div>
+                <div class="icon-box"><i class="fab fa-twitter"></i></div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

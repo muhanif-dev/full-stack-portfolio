@@ -1,0 +1,113 @@
+
+/* --- 1. HEADER (NAVBAR) RESPONSIVE --- */
+@media (max-width: 900px) {
+        html, body {
+    width: 100%;
+    overflow-x: hidden; /* Ye zaruri hai taaki koi bhi animation page ko horizontal scroll na karwaye */
+    margin: 0;
+    padding: 0;
+}
+    .navbar {
+        width: 95% !important;
+        border-radius: 20px !important;
+        height: auto !important; /* Fixed height hatayi */
+        /* padding: 10px !important; */
+        flex-direction: column !important;
+        /* gap: 10px !important; */
+        margin-top: 10px !important;
+    }
+    .nav-links {
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 0px;
+    }
+
+    .logo{
+        font-size: 20px;
+        margin-top: -28px;
+        margin-bottom: -10px;
+        
+    }
+    .nav-links a{
+        font-size: 13px;
+        margin-bottom: -40px;
+    }
+    .btn-hire{
+        display: none;
+    }
+}
+
+/* --- 2. ABOUT ME SECTION RESPONSIVE --- */
+/* Desktop par fixed rakhne ke liye sirf tablet/mobile target karenge */
+@media (max-width: 1024px) {
+    .about-section {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 40px !important;
+    }
+    .left-content {
+        min-width: 100% !important; /* Laptop/Tablet par full width */
+    }
+    .center-image {
+        order: -1; /* Image ko sabse upar lane ke liye */
+    }
+    .right-content {
+        flex-direction: row !important; /* Stats ko side-by-side karne ke liye */
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .right-content {
+        flex-direction: column !important; /* Mobile par stats stack ho jayenge */
+    }
+    .main-heading { font-size: 32px !important; }
+
+    .skill-card{
+    
+    min-width: 320px;
+    margin: auto;
+}
+
+.skill-group{
+   margin: auto;
+    width: 350px;
+}
+
+.stat-card{
+
+    width: 320px;
+}
+
+.card{
+    width: 380px;
+    margin: auto;
+}
+
+.section-title{
+    margin-top: -30px;
+}
+
+.glass-card{
+    height: 490px;
+    width: 380px;
+    margin: auto;
+}
+
+.form-grid{
+    display: flex;
+    gap: 10px;
+    
+}
+}
+
+
+
+/* --- 3. PROJECTS GRID RESPONSIVE --- */
+.grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    gap: 30px !important;
+}
