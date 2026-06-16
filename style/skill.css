@@ -9,12 +9,12 @@
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 30px; /* Khula-khula spacing */
+            gap: 30px;
         }
 
         .skill-card {
             background: #252429;
-            padding: 40px; /* Bada aur spacious box */
+            padding: 40px;
             border-radius: 20px;
             border: 1px solid #333;
             transition: all 0.4s ease;
