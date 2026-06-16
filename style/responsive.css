@@ -1,16 +1,15 @@
 
-/* --- 1. HEADER (NAVBAR) RESPONSIVE --- */
 @media (max-width: 900px) {
         html, body {
     width: 100%;
-    overflow-x: hidden; /* Ye zaruri hai taaki koi bhi animation page ko horizontal scroll na karwaye */
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
     .navbar {
         width: 95% !important;
         border-radius: 20px !important;
-        height: auto !important; /* Fixed height hatayi */
+        height: auto !important;
         /* padding: 10px !important; */
         flex-direction: column !important;
         /* gap: 10px !important; */
@@ -38,8 +37,7 @@
     }
 }
 
-/* --- 2. ABOUT ME SECTION RESPONSIVE --- */
-/* Desktop par fixed rakhne ke liye sirf tablet/mobile target karenge */
+/* ---  ABOUT ME SECTION RESPONSIVE --- */
 @media (max-width: 1024px) {
     .about-section {
         flex-direction: column !important;
@@ -47,13 +45,13 @@
         gap: 40px !important;
     }
     .left-content {
-        min-width: 100% !important; /* Laptop/Tablet par full width */
+        min-width: 100% !important; 
     }
     .center-image {
-        order: -1; /* Image ko sabse upar lane ke liye */
+        order: -1; 
     }
     .right-content {
-        flex-direction: row !important; /* Stats ko side-by-side karne ke liye */
+        flex-direction: row !important;
         justify-content: center !important;
         gap: 15px !important;
     }
@@ -61,7 +59,7 @@
 
 @media (max-width: 600px) {
     .right-content {
-        flex-direction: column !important; /* Mobile par stats stack ho jayenge */
+        flex-direction: column !important;
     }
     .main-heading { font-size: 32px !important; }
 
