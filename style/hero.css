@@ -1,9 +1,4 @@
 
-        /* ==========================================================================
-           1. CSS STYLES (Everything in one place)
-           ========================================================================== */
-        
-        /* Reset & Base Styling (Image 1 Aesthetic) */
         * {
             margin: 0;
             padding: 0;
@@ -44,7 +39,7 @@
         }
 
         .logo span {
-            color: #00ff99; /* Neon green accent from Image 1 */
+            color: #00ff99;
         }
 
         .nav-links a {
@@ -307,11 +302,8 @@
             line-height: 1.3;
         }
 
-        /* ==========================================================================
-           2. MEDIA QUERIES (For Full Responsiveness)
-           ========================================================================== */
         
-        /* Tablets & Small Laptops (Max-width: 1024px) */
+        /* Tablets & Small Laptops */
         @media (max-width: 1024px) {
             body {
                 padding: 0 5%;
@@ -329,7 +321,7 @@
             }
         }
 
-        /* Mobile Devices (Max-width: 768px) - Layout shifts to Stack Vertical */
+        /* Mobile Devices */
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -347,7 +339,7 @@
             }
 
             .hero-container {
-                flex-direction: column-reverse; /* Image upar, content neeche */
+                flex-direction: column-reverse;
                 text-align: center;
                 padding: 20px 0;
             }
@@ -378,11 +370,10 @@
             .stat-box {
                 flex-direction: column;
                 text-align: center;
-                width: 40%; /* 2 items per row on mobile */
+                width: 40%;
             }
         }
 
-        /* Very Small Mobiles (Max-width: 480px) */
         @media (max-width: 480px) {
             .hero-content h1 {
                 font-size: 32px;
