@@ -15,7 +15,7 @@
             z-index: 2;
         }
 
-        .section-title { font-size: 20px; margin-bottom: 40px; text-align: center; }
+        .section-title { font-size: 20px; padding-top:20px; margin-bottom: 30px; text-align: center; }
         .section-title span { color: #00ff99; }
 
         /* Form Styling */
