@@ -44,8 +44,6 @@
         /* Animated Blobs */
         .blob { position: absolute; width: 300px; height: 300px; background: #00ff99; filter: blur(100px); border-radius: 50%; opacity: 0.2; z-index: 1; }
         .blob-1 { top: -100px; left: -100px; }
-        .blob-2 { bottom: -100px; right: -100px; animation: move 10s infinite alternate; }
+        .blob-2 { bottom: -100px; right: -100px; }
 
-        @keyframes move { from { transform: translate(0, 0); } to { transform: translate(50px, 50px); } }
         @media (max-width: 768px) { .form-grid { grid-template-columns: 1fr; } }
-  

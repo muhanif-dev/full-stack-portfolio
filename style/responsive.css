@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media (max-width: 900px) {
         html, body {
     width: 100%;
@@ -64,14 +68,14 @@
     .main-heading { font-size: 32px !important; }
 
     .skill-card{
-    
-    min-width: 320px;
-    margin: auto;
+        min-width: 0;
+        width: 100%;
+        margin: auto;
 }
 
 .skill-group{
-   margin: auto;
-    width: 350px;
+    margin: auto;
+    width: min(100%, 350px);
 }
 
 .stat-card{
@@ -80,7 +84,7 @@
 }
 
 .card{
-    width: 380px;
+    width: min(100%, 380px);
     margin: auto;
 }
 
@@ -89,8 +93,9 @@
 }
 
 .glass-card{
-    height: 490px;
-    width: 380px;
+    width: min(100%, 380px);
+    height: auto;
+    padding: 30px;
     margin: auto;
 }
 
