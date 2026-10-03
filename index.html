@@ -54,14 +54,16 @@
             <h1>Hello I'm <br><span id="typing-text" class="accent-text"></span><span class="cursor">|</span></h1>
 
             <p class="description">
-                    I create responsive websites using HTML, CSS, JavaScript, Bootstrap, React, WordPress, and Elementor. I enjoy building modern, user-friendly, and mobile-friendly web experiences. My goal is to become a professional Full Stack Web Developer and create solutions that make people's lives easier.
+                I create responsive websites using HTML, CSS, JavaScript, Bootstrap, React, WordPress, and Elementor. I
+                enjoy building modern, user-friendly, and mobile-friendly web experiences. My goal is to become a
+                professional Full Stack Web Developer and create solutions that make people's lives easier.
             </p>
 
             <div class="action-area">
                 <button class="btn-cv"> <a href="CV.pdf" download="CV.pdf">DOWNLOAD CV </a><i
                         class="fa-solid fa-download"></i></button>
 
-</a>
+                </a>
 
                 <div class="social-icons">
                     <a href="https://github.com/muhanif-dev" class="wave-icon"><i class="fa-brands fa-github"></i></a>
@@ -82,7 +84,7 @@
                 <a href="#xd-section" class="skill-icon icon-xd"><i
                         class="skill-icon-mysql fa-solid fa-database profile-img-icon"></i></a>
                 <a href="#ai-section" class="skill-icon icon-ai"><i
-                        class="skill-icon-js fa-brands fa-js profile-img-icon"></i></a>
+                        class="skill-icon-express fa-solid fa-server profile-img-icon"></i></a>
             </div>
         </div>
 
@@ -114,7 +116,9 @@
             <h4 class="about-title">About Me</h4>
             <h2 class="main-heading">Why You Should Hire Me?</h2>
             <p class="description">
-                I am Muhammad Hanif, a BS Computer Science student with a strong passion for web development and technology. I have experience building websites using HTML, CSS, JavaScript, Bootstrap, React, WordPress, and Elementor.
+                I am Muhammad Hanif, a BS Computer Science student with a strong passion for web development and
+                technology. I have experience building websites using HTML, CSS, JavaScript, Bootstrap, React,
+                WordPress, and Elementor.
             </p>
 
             <div class="skill-group">
@@ -152,7 +156,8 @@
             <div class="stat-card">
                 <div class="stat-number">3+</div>
                 <div class="stat-text">Workshops & Training</div>
-                <p class="stat-desc">Certified in professional workshops including WordPress development and advanced modern web technologies.</p>
+                <p class="stat-desc">Certified in professional workshops including WordPress development and advanced
+                    modern web technologies.</p>
             </div>
             <div class="stat-card">
                 <div class="stat-number">34+</div>
@@ -334,15 +339,15 @@
 
         <div class="glass-card">
             <h2 class="section-title">Let's <span>Collaborate</span></h2>
-            
+
             <form id="contact-form">
-    <div class="form-grid">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-    </div>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn-submit">Send Message</button>
-</form>
+                <div class="form-grid">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
 
             <!-- Social Icons Added -->
             <div class="social-links">
@@ -359,27 +364,27 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script type="text/javascript">
-  (function() {
-    // Apni Public Key
-    emailjs.init("9_6FBJOie3h4z98HX");
-  })();
+    <script type="text/javascript">
+        (function () {
+            // Apni Public Key
+            emailjs.init("9_6FBJOie3h4z98HX");
+        })();
 
-  const contactForm = document.getElementById('contact-form');
+        const contactForm = document.getElementById('contact-form');
 
-  contactForm.addEventListener('submit', function(event) {
-    event.preventDefault();
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
 
-    // ID's aur Data bhejna
-    emailjs.sendForm('service_b2vvxql', 'template_y93ir7b', this)
-      .then(function() {
-        alert('Message sent successfully!');
-        contactForm.reset(); // Form clear ho jayega
-      }, function(error) {
-        alert('Failed to send, please try again. Error: ' + JSON.stringify(error));
-      });
-  });
-</script>
+            // ID's aur Data bhejna
+            emailjs.sendForm('service_b2vvxql', 'template_y93ir7b', this)
+                .then(function () {
+                    alert('Message sent successfully!');
+                    contactForm.reset(); // Form clear ho jayega
+                }, function (error) {
+                    alert('Failed to send, please try again. Error: ' + JSON.stringify(error));
+                });
+        });
+    </script>
 
 </body>
 
